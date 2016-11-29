@@ -1,5 +1,5 @@
 # blablacar-commission
-Affiche le prix total des trajet blablacar (prix + commission blablacar) sous Firefox
+Affiche le prix total des trajets blablacar (prix + commission blablacar) sous Firefox
 
 ## Installation
 
