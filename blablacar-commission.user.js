@@ -46,7 +46,7 @@ window.addEventListener('load', function(){
       var pct = Math.round (1000 / price * f) / 10
       f = Math.round((f) * 20) / 20
       var ttl = f + price
-      $this.html(`${ttl}€<div style='font-size:0.5em'>${price}+${f}(${pct}%)</div>`)
+      $this.html(`${ttl} €<div style='font-size:0.5em'>${price} €+${f} €(${pct}%)</div>`)
       // $this.html(`${price}€<div style="font-size:0.5em;font-weight:normal"> +${f}€ (${pct}%) =<b>${ttl}€</b></div>`)
     })
   }
