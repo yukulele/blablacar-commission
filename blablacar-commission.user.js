@@ -29,7 +29,7 @@ window.addEventListener('load', function(){
     [Infinity, 18, '%']
   ]
   function formatprice(price){
-    return price.toFixed(2).replace(/\.(.*)/, '<span class="font-size:0.65em">,$1 €</span>')
+    return price.toFixed(2).replace(/\.(.*)/, '<span style="font-size:0.65em">,$1 €</span>')
   }
   function rplcfrais(){
     $('.price strong span').each(function(){
