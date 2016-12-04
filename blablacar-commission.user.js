@@ -3,7 +3,7 @@
 // @namespace   https://github.com/yukulele/blablacar-commission
 // @description affiche la commission blablacar sur la liste des trajets
 // @include     https://www.blablacar.fr/*
-// @version     4
+// @version     5
 // @grant       none
 // ==/UserScript==
 
@@ -28,6 +28,9 @@ window.addEventListener('load', function(){
     [50, 9.00],
     [Infinity, 18, '%']
   ]
+  function formatprice(price){
+    return price.toFixed(2).replace(/\.(.*)/, '<span class="font-size:0.65em">,$1 €</span>')
+  }
   function rplcfrais(){
     $('.price strong span').each(function(){
       var $this = $(this)
@@ -46,7 +49,7 @@ window.addEventListener('load', function(){
       var pct = Math.round (1000 / price * f) / 10
       f = Math.round((f) * 20) / 20
       var ttl = f + price
-      $this.html(`${ttl} €<div style='font-size:0.5em'>${price} €+${f} €(${pct}%)</div>`)
+      $this.html(`${formatprice(ttl)}<div style='font-size:0.5em'>${formatprice(price)}+${formatprice(f)}(${pct}%)</div>`)
       // $this.html(`${price}€<div style="font-size:0.5em;font-weight:normal"> +${f}€ (${pct}%) =<b>${ttl}€</b></div>`)
     })
   }
