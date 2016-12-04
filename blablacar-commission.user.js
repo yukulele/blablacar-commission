@@ -2,7 +2,7 @@
 // @name        Blablacar frais
 // @namespace   https://github.com/yukulele/blablacar-commission
 // @description affiche la commission blablacar sur la liste des trajets
-// @include     https://www.blablacar.fr/*
+// @include     https://www.blablacar.fr/search?*
 // @version     3
 // @grant       none
 // ==/UserScript==
@@ -29,12 +29,12 @@ window.addEventListener('load', function(){
     [Infinity, 18, '%']
   ]
   function rplcfrais(){
-    $('.price strong span, .Booking-price').each(function(){
+    $('.price strong span').each(function(){
       var $this = $(this)
       var price = parseFloat($this.text().replace(/,/, '.'))
       for(var i in frais){
         var f = frais[i]
-        if(price <= f[0])
+        if(price - f[1] <= f[0])
           break
       }
       f = f.slice(0)
@@ -42,11 +42,12 @@ window.addEventListener('load', function(){
         f[1] = price * f[1] / 100
       }
       f = f[1]
+      price -= f
       var pct = Math.round (1000 / price * f) / 10
       f = Math.round((f) * 20) / 20
       var ttl = f + price
-      // $this.html(ttl+"€<div style='font-size:0.5em'>"+price+'+'+f+'('+pct+'%)'+'</div>')
-      $this.html(`${price}€<div style="font-size:0.5em;font-weight:normal"> +${f}€ (${pct}%) =<b>${ttl}€</b></div>`)
+      $this.html(`${ttl}€<div style='font-size:0.5em'>${price}+${f}(${pct}%)</div>`)
+      // $this.html(`${price}€<div style="font-size:0.5em;font-weight:normal"> +${f}€ (${pct}%) =<b>${ttl}€</b></div>`)
     })
   }
   
