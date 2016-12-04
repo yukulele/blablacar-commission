@@ -2,8 +2,8 @@
 // @name        Blablacar frais
 // @namespace   https://github.com/yukulele/blablacar-commission
 // @description affiche la commission blablacar sur la liste des trajets
-// @include     https://www.blablacar.fr/search?*
-// @version     3
+// @include     https://www.blablacar.fr/*
+// @version     4
 // @grant       none
 // ==/UserScript==
 
