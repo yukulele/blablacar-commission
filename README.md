@@ -12,6 +12,6 @@ Affiche le prix total des trajets blablacar (prix + commission blablacar)
 ![exemple blablacar-commission](blablacar-commission-exemple.png)
 
 Todo list
-* amelioré le style
-* rendre compatible avec les versions non francaise du site https://fr.wikipedia.org/wiki/BlaBlaCar#Les_diff.C3.A9rentes_implantations
+* ameliorer le style
+* rendre compatible avec les versions non française du site https://fr.wikipedia.org/wiki/BlaBlaCar#Les_diff.C3.A9rentes_implantations
 * rendre compatible avec google chrome SANS tampermonkey
