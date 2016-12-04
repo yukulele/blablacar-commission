@@ -3,11 +3,12 @@
 // @namespace   https://github.com/yukulele/blablacar-commission
 // @description affiche la commission blablacar sur la liste des trajets
 // @include     https://www.blablacar.fr/trajet*
+// @include     https://www.blablacar.fr/serch*
 // @version     1
 // @grant       none
 // ==/UserScript==
 
-window.addEventListener('load',function(){
+window.addEventListener('load', function(){
   
   var interval = setInterval(function(){
     if($('.price strong span, .Booking-price').length){
