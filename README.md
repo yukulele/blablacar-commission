@@ -1,6 +1,8 @@
 # blablacar-commission
 Affiche le prix total des trajets blablacar (prix + commission blablacar)
 
+Basée sur la [Nouvelle grille de frais de réservation(15/11/2016)](https://www.blablacar.fr/blablalife/lp/nouvelle-grille-de-frais-de-reservation)
+
 ## Installation
 
 * Pour Mozilla Firefox, installer [Greasemonkey](https://addons.mozilla.org/fr/firefox/addon/greasemonkey/)
