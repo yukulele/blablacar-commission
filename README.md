@@ -5,8 +5,8 @@ Basée sur la [Nouvelle grille de frais de réservation(15/11/2016)](https://www
 
 ## Installation
 
-* Pour Mozilla Firefox, installer [Greasemonkey](https://addons.mozilla.org/fr/firefox/addon/greasemonkey/)
-* Pour Google Chrome ou Opera, installer [Violentmonkey](https://violentmonkey.github.io/nex/)
+* Pour **Mozilla Firefox**, installer [Greasemonkey](https://addons.mozilla.org/fr/firefox/addon/greasemonkey/)
+* Pour **Google Chrome** ou **Opera**, installer [Violentmonkey](https://violentmonkey.github.io/nex/)
 * Installer [blablacar-commission.user.js](https://github.com/yukulele/blablacar-commission/raw/master/blablacar-commission.user.js)
 
 ## Exemple
