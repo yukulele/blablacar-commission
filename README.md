@@ -6,7 +6,7 @@ Basée sur la [Nouvelle grille de frais de réservation(15/11/2016)](https://www
 ## Installation
 
 * Pour Mozilla Firefox, installer [Greasemonkey](https://addons.mozilla.org/fr/firefox/addon/greasemonkey/)
-* Pour Google Chrome, installer [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=fr)
+* Pour Google Chrome ou Opera, installer [Violentmonkey](https://violentmonkey.github.io/nex/)
 * Installer [blablacar-commission.user.js](https://github.com/yukulele/blablacar-commission/raw/master/blablacar-commission.user.js)
 
 ## Exemple
@@ -16,4 +16,4 @@ Basée sur la [Nouvelle grille de frais de réservation(15/11/2016)](https://www
 Todo list
 * ameliorer le style
 * rendre compatible avec les versions non française du site https://fr.wikipedia.org/wiki/BlaBlaCar#Les_diff.C3.A9rentes_implantations
-* rendre compatible avec google chrome SANS tampermonkey
+* rendre compatible avec google chrome SANS Violentmonkey
